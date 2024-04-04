@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: rgb(233, 231, 157);
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.child{
+    background-color: blanchedalmond;
+    border: 2px solid yellowgreen;
+    flex-shrink:0 ;
+}
+.parent1{
+    background-color: rgb(107, 12, 12);
+    display: flex;
+    padding: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.child1{
+    background-color: blanchedalmond;
+    border: 2px solid rgb(51, 72, 9);
+    flex-shrink:0 ;
+    padding: 10px;
+}
+.parent2{
+    background-color: rgb(7, 65, 51);
+    display: flex;
+    padding: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.child2{
+    background-color: blanchedalmond;
+    border: 2px solid rgb(167, 232, 37);
+    flex-shrink:0 ;
+    padding: 10px;
+}
+.parent3{
+    background-color: rgb(164, 136, 10);
+    display: flex;
+    padding: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.child3{
+    background-color: blanchedalmond;
+    border: 2px solid rgb(86, 6, 53);
+    flex-shrink:0 ;
+    padding: 10px;
+}
+.parent4{
+    background-color: rgb(197, 234, 14);
+    display: flex;
+    padding: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.child4{
+    background-color: blanchedalmond;
+    border: 2px solid rgb(15, 95, 116);
+    flex-shrink:0 ;
+    padding: 10px;
+}
+.practice{
+    background-color: crimson;
+    width:100vw;
+    height:100vh;
+
+}
