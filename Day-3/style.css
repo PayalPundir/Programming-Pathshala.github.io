@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: darkslategray;
+    color: antiquewhite;
+    font-size: 20px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:yellowgreen;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline wavy yellowgreen 5px;
+}
+.parent{
+    display:grid;
+    /* grid-template-columns: 100px 150px 50px;  */
+    /* repeat(3,100px) */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 70px 80px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.child{
+    background-color:cadetblue;
+    color:rgb(19, 31, 6);
+    border: 2px dotted whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.link{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.footer{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+h2{
+    padding: 10px;
+}
+.parent1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-rows: 100px;
+}
+.child1{
+    background-color:rgb(51, 114, 9);
+    color:rgb(19, 31, 6);
+    border: 2px dotted whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent3{
+    background-color: blueviolet;
+    height: 100px;
+    width:100px;
+    position: absolute;
+    bottom: 100px;
+    left:200px;
+}
+.parent4{
+    background-color: rgb(25, 6, 43);
+    height: 100px;
+    width:100px;
+    position: relative;
+    bottom: 100px;
+    top:200px;
+}
+.parent0{
+    background-color: rgb(14, 132, 84);
+    color: wheat;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear ;
+}
+.head{
+    background-color: brown;
+    padding: 10px;
+}
+@media  (800px <= width <= 1200px) {
+    .parent0{
+        background-color: black;
+    }
+    .head{
+        background-color: chocolate;
+    }
+    
+}
+/* button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 100px;
+    transition-duration: 3s;
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover{
+    background-color: black;
+    color: aqua;
+    scale: 2;
+    transition-duration: 3s;
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+} */
+
+button{
+    scale: 2;
+    position:absolute;
+    top: 20px;
+    left: 40px;
+    animation-name: button-anitype1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes button-anitype1 {
+    0%{
+        top:20px;
+        left: 40px;
+    }
+    25%{
+        top:40px;
+        left:500px;
+    }
+    50%{
+        top:70px;
+        left:500px;
+    }
+    75%{
+        top:40px;
+        left:500px;
+    }
+    100%{
+        top: 500px; 
+        left: 500px;
+    }
+    
+}
